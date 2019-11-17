@@ -1,4 +1,4 @@
-from flask import Flask, request, send_from_directory
+from flask import Flask
 from controllers.mainpage import mainpage
 app = Flask(__name__, template_folder = "views")
 
