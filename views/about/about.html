@@ -1,0 +1,94 @@
+{% extends "tpl/base.html" %}
+{% set active_page = "about" %}
+
+{% block content %}
+
+<div class="about-wrapper">
+    <h2 class="title">{{_('Open Assessment of Swiss Economy and Society')}}</h2>
+
+    <ul class="about-points">
+        <li>{{_('Identification of the environmental and social drivers and resource related risks of Swiss production and consumption.')}}</li>
+        <li>{{_('Complete sustainability assessment of current Swiss production and consumption.')}}</li>
+        <li>{{_('Quantification of the external social and environmental costs and the relationship of Swiss production and consumption to planetary boundaries, applying site-dependent impact assessment.')}}</li>
+    </ul>
+
+    <h3 class="title">{{_('Collaboration of')}}</h3>
+    <div class="about-collaboration uk-grid-collapse" uk-grid>
+        <div class="about-collaboration-item uk-width-1-4">
+            <div class="about-collaboration-item-logo">
+                <img src="/static/imgs/logos/unifreiburg.png">
+            </div>
+            <div class="about-collaboration-item-name">
+                University of Freiburg
+            </div>
+        </div>
+        <div class="about-collaboration-item uk-width-1-4">
+            <div class="about-collaboration-item-logo">
+                <img src="/static/imgs/logos/empa.png">
+            </div>
+            <div class="about-collaboration-item-name">
+                Empa
+            </div>
+        </div>
+        <div class="about-collaboration-item uk-width-1-4">
+            <div class="about-collaboration-item-logo">
+                <img src="/static/imgs/logos/psi.png">
+            </div>
+            <div class="about-collaboration-item-name">
+                Paul Scherrer Institut
+            </div>
+        </div>
+        <div class="about-collaboration-item uk-width-1-4">
+            <div class="about-collaboration-item-logo">
+                <img src="/static/imgs/logos/ecoinvent.png">
+            </div>
+            <div class="about-collaboration-item-name">
+                Ecoinvent
+            </div>
+        </div>
+    </div>
+
+    <div class="about-text">
+      <p>
+        {{_('This project aims to quantify the global environmental and social burdens associated with current Swiss production and consumption from a life-cycle perspective.
+        It intends to substantially improve on the current state of knowledge by adaptively coupling detailed process-specific inventory data from the <a href="https://www.ecoinvent.org/">ecoinvent database</a>
+        with multi-regional industry-sector specific input-output (MRIO) data from the <a href="https://www.exiobase.eu/">EXIOBASE database</a>.')}}
+      </p>
+
+      <p>
+        {{_('Special attention is dedicated to the scientifically sound combination of data from different sources, aggregation levels, and physical/economic layers.
+        Moreover, quantitative social indicators from the Social Hotspots Database will be integrated into the ecoinvent database.')}}
+      </p>
+
+      <p>
+        {{_('Based on this global, consistent, and comprehensive dataset, we will identify location-dependent hot spots and leverage points for the environmental and social impacts
+        of Swiss production and consumption, and determine areas where improvements carry the smallest economic burdens or even provide economic benefits.')}}
+      </p>
+
+      <p>
+        {{_('We will also consider and quantify resource dependencies, criticalities, and risks of key Swiss industries.')}}
+      </p>
+
+      <p>
+        {{_('During the project, we will create or update inventory data shown to be particularly important, uncertain, or outdated.')}}
+      </p>
+    </div>
+
+    <div class="about-sponsors">
+      <h3 class="title">{{_('Sponsors')}}</h3>
+      {{_('The project is part of the National Research program NRP73 "Sustainable Economy" and is funded by the Swiss National Science foundation.')}}
+
+      <div class="about-sponsors-logo">
+        <a href="http://www.snf.ch/en/Pages/default.aspx">
+          <img src="/static/imgs/logos/snf.png">
+        </a>
+      </div>
+      <div class="about-sponsors-logo">
+        <a href="http://www.nrp73.ch/en">
+          <img src="/static/imgs/logos/nrp.png">
+        </a>
+      </div>
+    </div>
+</div>
+
+{% endblock %}

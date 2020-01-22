@@ -1,0 +1,58 @@
+{% set active_page = active_page|default('main') -%}
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Oases</title>
+    <link href="https://fonts.googleapis.com/css?family=Arvo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/uikit.min.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+
+    <script type="text/javascript" src="/static/js/uikit.min.js"></script>
+    <script type="text/javascript" src="/static/js/uikit.min.js"></script>
+  </head>
+  <body>
+    <div class="page uk-align-center">
+        <div uk-grid class="header uk-grid-collapse">
+            <div class="uk-width-1-6">
+                <a href="/" class="logo-link">
+                    <div class="water">
+                		    <div class="wave">
+                            <div class="wave1"></div><div class="wave2"></div>
+                            <div class="wave3"></div><div class="wave4"></div>
+                        </div>
+                	  </div>
+                    <div class="logo">Oases</div>
+                </a>
+            </div>
+          </a>
+            <div class="uk-width-1-6"></div>
+            <div class="uk-width-2-3 uk-flex-right header-menu" uk-grid>
+                <div>
+                  <a href="/about" class="{% if active_page=='about' %}active{% endif%}">{{_('About')}}</a>
+                </div>
+                <div>
+                  <a href="/project" class="{% if active_page=='project' %}active{% endif%}">{{_('Project')}}</a>
+                </div>
+                <div>
+                  <a href="/publications" class="{% if active_page=='publications' %}active{% endif%}">{{_('Publications')}}</a>
+                </div>
+                <div>
+                  <a href="calculator">{{_('Calculator')}}</a>
+                </div>
+                <div>
+                  <a href="/team" class="{% if active_page=='team' %}active{% endif%}">{{_('Team')}}</a>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+          {% block content %}{% endblock %}
+        </div>
+        <div class="footer">
+            footer
+        </div>
+    </div>
+</body>
+</html>

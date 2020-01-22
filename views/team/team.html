@@ -1,0 +1,21 @@
+{% extends "tpl/base.html" %}
+{% set active_page = "team" %}
+
+{% block content %}
+
+<div class="team-wrapper uk-flex-center" uk-grid>
+
+{% for item in team %}
+
+<div class="team-item uk-width-1-2 uk-width-1-4@m uk-width-1-2@s">
+  <div class="team-item-img">
+    <img src="/static/imgs/team/{{item.img}}">
+  </div>
+  <div class="team-item-name">{{item.name}}</div>
+</div>
+
+{% endfor %}
+
+</div>
+
+{% endblock %}
