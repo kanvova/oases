@@ -1,1 +1,1 @@
-web:gunicorn oases:app
+web: gunicorn oases:app
