@@ -3,19 +3,24 @@
 
 {% block content %}
 
-<div class="team-wrapper uk-flex-center" uk-grid>
-
 {% for item in team %}
 
-<div class="team-item uk-width-1-2 uk-width-1-4@m uk-width-1-2@s">
-  <div class="team-item-img">
-    <img src="/static/imgs/team/{{item.img}}">
-  </div>
-  <div class="team-item-name">{{item.name}}</div>
-</div>
+<h2 class="inst-name">{{item.institution}}</h2>
 
+<div class="uk-flex uk-flex-center" uk-grid>
+
+    {% for member in item.people %}
+    <div class="uk-text-center">
+        <div class="inst-member-img">
+            <img src="/static/imgs/team/{{member.img}}">
+        </div>
+        <div class="inst-member-name">{{member.name}}</div>
+        <div class="inst-member-role">{{member.role}}</div>
+        <div class="inst-member-descr">{{member.descr|safe}}</div>
+    </div>
+
+    {% endfor %}
+</div>
 {% endfor %}
-
-</div>
 
 {% endblock %}

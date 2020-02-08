@@ -6,7 +6,7 @@ html{
     background: #fafafa;
     color: #333;
 }
-h1, h2, h3, h4{
+h1, h2, h3, h4, h5{
     font-family: 'Arvo', serif;
 }
 
@@ -160,24 +160,99 @@ h1, h2, h3, h4{
   width: 100%;
 }
 
-.team-wrapper{
-  max-width: 1024px;
+.row {
+  display: flex;
+  width: 70%;
   margin: 0 auto;
 }
-.team-item{
+
+.column {
+  flex: 50%;
 }
-.team-item-name{
+
+.inst-name{
+  width: 100%;
   text-align: center;
-  font-size: 18px;
-  font-weight: 300;
-  margin-top: 10px;
+  margin-bottom: 40px;
 }
-.team-item-img{
+
+.inst-member-name{
+  text-align: center;
+  max-width: 340px;
+  margin-top: 20px;
+  font-family: 'Arvo', serif;
+  font-size: 20px;
+}
+.inst-member-role{
+  text-align: center;
+  max-width: 340px;
+  font-family: 'Arvo', serif;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+.inst-member-img{
+  text-align: center;
   width: 200px;
-  margin: 0 auto;
+  margin: 0px auto;
   overflow: hidden;
   border-radius: 4px;
 }
-.team-item-img img{
-  width: 100%;
+.inst-member-descr{
+  text-align: center;
+  max-width: 350px;
+  color: #808080;
 }
+
+/*.team-wrapper{*/
+/*  max-width: 1024px;*/
+/*  margin: 0 auto;*/
+/*}*/
+/*.team-item{*/
+/*}*/
+/*.team-item-name{*/
+/*  text-align: center;*/
+/*  font-size: 18px;*/
+/*  font-weight: 300;*/
+/*  margin-top: 10px;*/
+/*}*/
+/*.team-item-img{*/
+/*  width: 200px;*/
+/*  margin: 0 auto;*/
+/*  overflow: hidden;*/
+/*  border-radius: 4px;*/
+/*}*/
+/*.team-item-img img{*/
+/*  width: 100%;*/
+/*}*/
+
+
+/*.team-wrapper{*/
+/*  max-width: 1024px;*/
+/*  margin: 0 auto;*/
+/*}*/
+/*.team-inst{*/
+/*}*/
+
+/*.inst-item-name{*/
+/*  min-width: 1024px;*/
+/*  text-align: center;*/
+/*  font-size: 24px;*/
+/*  font-weight: 400;*/
+/*  margin-top: 12px;*/
+/*}*/
+/*.item-member-name{*/
+/*  text-align: center;*/
+/*  font-size: 18px;*/
+/*  font-weight: 300;*/
+/*  margin-top: 10px;*/
+/*}*/
+/*.item-member-img{*/
+/*  width: 200px;*/
+/*  margin: 0 auto;*/
+/*  overflow: hidden;*/
+/*  border-radius: 4px;*/
+/*}*/
+/*.item-member-img img{*/
+/*  width: 100%;*/
+/*}*/
+
