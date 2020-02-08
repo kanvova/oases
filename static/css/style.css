@@ -169,16 +169,18 @@ h1, h2, h3, h4, h5{
 .inst-member-name{
   text-align: center;
   max-width: 350px;
-  margin-top: 20px;
   font-family: 'Arvo', serif;
   font-size: 20px;
+  margin: 0px auto;
+  margin-top: 20px;
 }
 .inst-member-role{
   text-align: center;
   max-width: 350px;
   font-family: 'Arvo', serif;
-  margin-bottom: 20px;
   font-size: 16px;
+  margin: 0px auto;
+  margin-bottom: 20px;
 }
 .inst-member-img{
   text-align: center;
@@ -191,6 +193,7 @@ h1, h2, h3, h4, h5{
   text-align: center;
   max-width: 350px;
   color: #808080;
+  margin: 0px auto;
 }
 
 /*.team-wrapper{*/
