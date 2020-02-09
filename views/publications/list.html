@@ -1,0 +1,33 @@
+{% extends "tpl/base.html" %}
+{% set active_page = "publications" %}
+
+{% block content %}
+
+<div class="publications-wrapper uk-grid-collapse uk-flex-center" uk-grid>
+    {% for publication in publications %}
+        <div class="publications-item uk-width-1-3">
+          <div class="uk-card uk-card-default">
+              <a href="/publications/{{publication.id}}">
+                  <div class="uk-card-media-top">
+                      <img src="{{publication.cover}}" alt="">
+                  </div>
+                  <div class="uk-card-body">
+                      <div class="publications-item-title">{{publication.title}}</div>
+                      <div class="publications-item-description">{{publication.description|truncate(100)}}</div>
+                      {% if publication.author != None %}
+                      <div class="publications-item-autor">{{publication.author}}</div>
+                      {% endif %}
+
+                      {% if session["admin"] %}
+                      <div class="uk-position-top-right uk-margin-small-top uk-margin-small-right">
+                          <a href="/publications/edit?id={{publication.id}}" class="uk-icon-button" uk-icon="pencil"></a>
+                      </div>
+                      {% endif %}
+                  </div>
+              </a>
+          </div>
+        </div>
+{% endfor %}
+</div>
+
+{% endblock %}

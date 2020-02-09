@@ -1,0 +1,33 @@
+{% extends "tpl/base.html" %}
+{% set active_page = "publications" %}
+
+{% block content %}
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Trumbowyg/2.20.0/ui/trumbowyg.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Trumbowyg/2.20.0/trumbowyg.min.js"></script>
+<fieldset class="uk-fieldset">
+    <legend class="uk-legend">{{_('Create new publication')}}</legend>
+    <div class="uk-margin">
+        <input class="uk-input" id="edit-publication-title" type="text" placeholder="Title">
+    </div>
+    <div class="uk-margin">
+        <textarea class="uk-textarea" id="edit-publication-description" placeholder="Description""></textarea>
+    </div>
+    <div class="uk-margin">
+        <input class="uk-input" id="edit-publication-cover" type="text" placeholder="Cover (url)">
+    </div>
+    <div class="uk-margin">
+        <input class="uk-input" id="edit-publication-author" type="text" placeholder="Author">
+    </div>
+    <textarea id="edit-publication-content"></textarea>
+    <script type="text/javascript">
+      var editor = $('#edit-publication-content').trumbowyg({
+        imageWidthModalEdit: true
+      });
+    </script>
+    <br><br>
+    <button class="uk-button uk-button-primary" onclick="publications.save()">Save</button>
+</fieldset>
+
+
+{% endblock %}

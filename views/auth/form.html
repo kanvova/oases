@@ -1,0 +1,18 @@
+{% extends "tpl/base.html" %}
+
+{% block content %}
+
+<fieldset class="uk-fieldset" style="width: 400px; margin: 20px auto; text-align:center">
+    <legend class="uk-legend">{{_('Log in')}}</legend>
+    <div class="uk-margin">
+        <input class="uk-input" id="auth-login" type="text" placeholder="Login">
+    </div>
+    <div class="uk-margin">
+        <input class="uk-input" id="auth-password" type="text" placeholder="Password">
+    </div>
+    <br>
+    <button class="uk-button uk-button-primary" onclick="auth.send()">Enter</button>
+</fieldset>
+
+
+{% endblock %}

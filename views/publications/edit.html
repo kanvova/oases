@@ -1,0 +1,41 @@
+{% extends "tpl/base.html" %}
+{% set active_page = "publications" %}
+
+{% block content %}
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Trumbowyg/2.20.0/ui/trumbowyg.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Trumbowyg/2.20.0/trumbowyg.min.js"></script>
+
+<fieldset class="uk-fieldset">
+    <legend class="uk-legend">{{_('Edit publication')}}</legend>
+    <div class="uk-margin">
+        <input class="uk-input" id="edit-publication-title" type="text"
+          placeholder="Title" value="{{publication.title}}">
+    </div>
+    <div class="uk-margin">
+        <textarea class="uk-textarea" id="edit-publication-description"
+          placeholder="Description">{{publication.description}}</textarea>
+    </div>
+    <div class="uk-margin">
+        <input class="uk-input" id="edit-publication-cover" type="text"
+          placeholder="Cover (url)" value="{{publication.cover}}">
+    </div>
+    <div class="uk-margin">
+        <input class="uk-input" id="edit-publication-author" type="text"
+          placeholder="Author" value="{{publication.author}}">
+    </div>
+    <textarea id="edit-publication-content">{{publication.content}}</textarea>
+    <script type="text/javascript">
+      var editor = $('#edit-publication-content').trumbowyg({
+        imageWidthModalEdit: true
+      });
+    </script>
+    <br><br>
+    <button class="uk-button uk-button-primary"
+      onclick="publications.save({{publication.id}})">Save</button>
+    <button class="uk-button uk-button-danger" style="float:right"
+      onclick="publications.remove({{publication.id}})">Remove</button>
+</fieldset>
+
+
+{% endblock %}

@@ -1,0 +1,182 @@
+{% extends "tpl/base.html" %}
+{% set active_page = "project" %}
+
+{% block content %}
+
+<div class="project-wrapper">
+    <h2 class="title">{{_('Project description')}}</h2>
+
+    <div class="project-description">
+      {{_('Some text')}}
+    </div>
+
+
+
+    <div class="project-schemе">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 290 50" width="290" height="50"
+          class="uk-position-absolute uk-transform-center" style="left: 70%; top: 8%;">
+          <defs>
+            <marker id="arrowhead" markerWidth="10" markerHeight="7"
+              refX="0" refY="3.5" orient="auto" fill="#e67e22">
+              <polygon points="0 0, 10 3.5, 0 7" />
+            </marker>
+          </defs>
+          <line x1="50" y1="25" x2="270" y2="25" stroke="#e67e22"
+            stroke-width="2" marker-end="url(#arrowhead)" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150" width="150" height="150"
+          class="uk-position-absolute uk-transform-center" style="left: 70%; top: 20%;">
+          <line x1="135" y1="25" x2="25" y2="25" stroke="#e67e22"
+            stroke-width="2" marker-end="url(#arrowhead)" />
+          <line x1="135" y1="25" x2="135" y2="130" stroke="#e67e22" stroke-width="2" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150" width="150" height="150"
+          class="uk-position-absolute uk-transform-center" style="left: 45%; top: 42%;">
+          <line x1="10" y1="70" x2="90" y2="128" stroke="#e67e22"
+            stroke-width="2" marker-end="url(#arrowhead)" />
+          <line x1="10" y1="0" x2="10" y2="70" stroke="#e67e22" stroke-width="2" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 200" width="150" height="200"
+          class="uk-position-absolute uk-transform-center" style="left: 85%; top: 47%;">
+          <line x1="100" y1="100" x2="100" y2="45" stroke="#e67e22"
+            stroke-width="2" marker-end="url(#arrowhead)" />
+          <line x1="20" y1="180" x2="100" y2="100" stroke="#e67e22" stroke-width="2" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 420" width="150" height="420"
+          class="uk-position-absolute uk-transform-center" style="left: 22%; top: 54%;">
+          <line x1="20" y1="200" x2="112" y2="200" stroke="#e67e22"
+            stroke-width="2" marker-end="url(#arrowhead)" />
+          <line x1="20" y1="200" x2="20" y2="375" stroke="#e67e22"
+            stroke-width="2" marker-end="url(#arrowhead)" />
+          <line x1="20" y1="10" x2="20" y2="200" stroke="#e67e22" stroke-width="2" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 200" width="100" height="200"
+          class="uk-position-absolute uk-transform-center" style="left: 28%; top: 65%;">
+          <line x1="20" y1="90" x2="59" y2="40" stroke="#e67e22"
+            stroke-width="2" marker-end="url(#arrowhead)" />
+          <line x1="20" y1="180" x2="20" y2="90" stroke="#e67e22" stroke-width="2" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150" width="200" height="150"
+          class="uk-position-absolute uk-transform-center" style="left: 52%; top: 68%;">
+          <line x1="85" y1="50" x2="180" y2="127" stroke="#e67e22"
+            stroke-width="2" marker-end="url(#arrowhead)" />
+          <line x1="85" y1="50" x2="20" y2="107" stroke="#e67e22"
+            stroke-width="2" marker-end="url(#arrowhead)" />
+          <line x1="85" y1="0" x2="85" y2="50" stroke="#e67e22" stroke-width="2" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 150" width="100" height="150"
+          class="uk-position-absolute uk-transform-center" style="left: 75%; top: 68%;">
+          <line x1="60" y1="90" x2="20" y2="27" stroke="#e67e22"
+            stroke-width="2" marker-end="url(#arrowhead)" />
+          <line x1="60" y1="150" x2="60" y2="90" stroke="#e67e22" stroke-width="2" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100" width="200" height="100"
+          class="uk-position-absolute uk-transform-center" style="left: 50%; top: 88%;">
+          <line x1="130" y1="100" x2="50" y2="55" stroke="#e67e22"
+            stroke-width="2" marker-end="url(#arrowhead)" />
+          <line x1="180" y1="10" x2="180" y2="90" stroke="#e67e22" stroke-width="2" />
+        </svg>
+
+        <div class="uk-position-absolute uk-transform-center project-schemе-wp uk-box-shadow-medium"
+                style="left: 35%; top: 10%">
+            <div class="project-schemе-wp-title">Work Package 0</div>
+            <div class="project-schemе-wp-segment">Project management</div>
+            <div class="project-schemе-wp-info">
+                Outputs:<br>
+                - Annual meetings<br>
+                - Data exchange workshops<br>
+                - Steakholder workshops<br>
+                - Final report & dissemination
+            </div>
+        </div>
+        <div class="uk-position-absolute uk-transform-center project-schemе-wp uk-box-shadow-medium"
+                style="left: 55%; top: 55%">
+            <div class="project-schemе-wp-title">Work Package 1</div>
+            <div class="project-schemе-wp-segment">Big data</div>
+            <div class="project-schemе-wp-info">
+                Outputs:<br>
+                - Merging methodology<br>
+                - Merged database
+            </div>
+        </div>
+        <div class="uk-position-absolute uk-transform-center project-schemе-wp uk-box-shadow-medium"
+                style="left: 25%; top: 28%">
+            <div class="project-schemе-wp-title">Work Package 2</div>
+            <div class="project-schemе-wp-segment">Integrate SHDB</div>
+            <div class="project-schemе-wp-info">
+                Outputs:<br>
+                - Social indicators in ecoinvent<br>
+                - Mapping social hotspots DB to EXIOBASE
+            </div>
+        </div>
+        <div class="uk-position-absolute uk-transform-center project-schemе-wp uk-box-shadow-medium"
+                style="left: 75%; top: 32%">
+            <div class="project-schemе-wp-title">Work Package 5</div>
+            <div class="project-schemе-wp-segment">Integrated assessment</div>
+            <div class="project-schemе-wp-info">
+                Outputs:<br>
+                - Leverage point methodology<br>
+                - Integrated assessment of Swiss consumption
+            </div>
+        </div>
+        <div class="uk-position-absolute uk-transform-center project-schemе-wp uk-box-shadow-medium"
+                style="left: 25%; top: 80%">
+            <div class="project-schemе-wp-title">Work Package 3</div>
+            <div class="project-schemе-wp-segment">Resource risks</div>
+            <div class="project-schemе-wp-info">
+                Outputs:<br>
+                - Risk indicators<br>
+                - Indicators scores of tree societal functions
+            </div>
+        </div>
+        <div class="uk-position-absolute uk-transform-center project-schemе-wp uk-box-shadow-medium"
+                style="left: 75%; top: 80%">
+            <div class="project-schemе-wp-title">Work Package 4</div>
+            <div class="project-schemе-wp-segment">New & revised datasets</div>
+            <div class="project-schemе-wp-info">
+                Outputs:<br>
+                - Datasets
+            </div>
+        </div>
+
+        <div class="uk-position-absolute uk-transform-center project-schemе-connector uk-box-shadow-small"
+                style="left: 75%; top: 8%">
+          Data formats<br>to all WPs
+        </div>
+        <div class="uk-position-absolute uk-transform-center project-schemе-connector uk-box-shadow-small"
+                style="left: 80%; top: 15%">
+            Final results
+        </div>
+        <div class="uk-position-absolute uk-transform-center project-schemе-connector uk-box-shadow-small"
+                style="left: 34%; top: 42%">
+            Mapping social<br>indicators<br>to EXIOBASE
+        </div>
+        <div class="uk-position-absolute uk-transform-center project-schemе-connector uk-box-shadow-small"
+                style="left: 89%; top: 47%">
+            Merged<br>database
+        </div>
+        <div class="uk-position-absolute uk-transform-center project-schemе-connector uk-box-shadow-small"
+                style="left: 13%; top: 53%">
+            Ecoinvent<br>database<br>with social<br>indicators
+        </div>
+        <div class="uk-position-absolute uk-transform-center project-schemе-connector uk-box-shadow-small"
+                style="left: 23%; top: 66%">
+            Indicator<br>scores
+        </div>
+        <div class="uk-position-absolute uk-transform-center project-schemе-connector uk-box-shadow-small"
+                style="left: 50%; top: 67%">
+            Preliminary<br>database
+        </div>
+        <div class="uk-position-absolute uk-transform-center project-schemе-connector uk-box-shadow-small"
+                style="left: 77%; top: 68%">
+            New & updated<br>datasets
+        </div>
+        <div class="uk-position-absolute uk-transform-center project-schemе-connector uk-box-shadow-small"
+                style="left: 63%; top: 92%">
+            New & updated<br>datasets
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}

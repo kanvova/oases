@@ -1,0 +1,17 @@
+{% extends "tpl/base.html" %}
+{% set active_page = "publications" %}
+
+{% block content %}
+
+<div class="uk-height-large uk-background-cover uk-light uk-flex" uk-parallax="bgy: -200"
+  style="margin:-20px; background-image: url('{{publication.cover}}');">
+    <h1 class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical publication-title">
+        {{publication.title}}
+    </h1>
+</div>
+<div class="publication-page">
+  {{publication.content|safe}}
+</div>
+
+
+{% endblock %}

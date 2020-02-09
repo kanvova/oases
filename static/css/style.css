@@ -181,3 +181,94 @@ h1, h2, h3, h4{
 .team-item-img img{
   width: 100%;
 }
+.publications-wrapper{
+}
+.publications-item{
+  width: 340px;
+  margin: 20px;
+}
+.publications-item .uk-card{
+  border-radius: 2px;
+  height: 100%;
+}
+.publications-item .uk-card-media-top{
+  height: 200px;
+  border-radius: 2px 2px 0 0;
+  overflow: hidden;
+}
+.publications-item .uk-card-media-top img{
+  min-height: 100%;
+}
+.publications-item-title{
+  font-size: 20px;
+  font-family: 'Arvo', serif;
+}
+.publications-item-description{
+  margin-top: 10px;
+}
+.publications-item-autor{
+  color: #7f8c8d;
+  font-weight: 100;
+  margin-top: 20px;
+}
+.publications-item a{
+  text-decoration: none;
+  color: inherit;
+}
+.publication-page{
+  max-width: 1000px;
+  padding: 20px;
+  background: #fff;
+  margin: -150px auto 50px;
+  border-radius: 2px;
+}
+.publication-title{
+  color: #fff;
+  text-shadow: 0 0 10px #777;
+}
+.project-wrapper{
+}
+
+.project-schemе{
+  height: 1000px;
+  width: 600px;
+  margin:  0 auto;
+  position: relative;
+}
+
+.project-schemе-wp{
+  padding: 10px 20px;
+  border-radius: 2px;
+  background: #fff;
+  width: 280px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.project-schemе-wp:hover{
+  box-shadow: 0 14px 25px rgba(0,0,0,.16) !important;
+}
+.project-schemе-wp-title{
+  font-family: 'Arvo', serif;
+  font-size: 16px;
+  text-align: center;
+}
+.project-schemе-wp-segment{
+  font-weight: 100;
+  color: #3498db;
+  font-size: 14px;
+  text-align: center;
+}
+.project-schemе-wp-info{
+  font-weight: 100;
+  font-size: 14px;
+}
+
+.project-schemе-connector{
+  padding: 10px 20px;
+  border-radius: 20px;
+  background: #fff;
+  font-size: 14px;
+  font-weight: 100;
+  text-align: center;
+  color: #95a5a6;
+}

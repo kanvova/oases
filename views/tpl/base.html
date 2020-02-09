@@ -1,4 +1,4 @@
-{% set active_page = active_page|default('main') -%}
+{% set active_page = active_page|default('main') %}
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -10,8 +10,10 @@
     <link rel="stylesheet" href="/static/css/uikit.min.css">
     <link rel="stylesheet" href="/static/css/style.css">
 
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script type="text/javascript" src="/static/js/uikit.min.js"></script>
-    <script type="text/javascript" src="/static/js/uikit.min.js"></script>
+    <script type="text/javascript" src="/static/js/uikit-icons.min.js"></script>
+    <script type="text/javascript" src="/static/js/script.js"></script>
   </head>
   <body>
     <div class="page uk-align-center">
@@ -40,11 +42,18 @@
                   <a href="/publications" class="{% if active_page=='publications' %}active{% endif%}">{{_('Publications')}}</a>
                 </div>
                 <div>
-                  <a href="calculator">{{_('Calculator')}}</a>
-                </div>
-                <div>
                   <a href="/team" class="{% if active_page=='team' %}active{% endif%}">{{_('Team')}}</a>
                 </div>
+
+                {% if session["admin"] %}
+                <div style="margin-top:-5px;">
+                  <a class="uk-icon-button auth-btn" uk-icon="sign-out" onclick="auth.logout()"></a>
+                </div>
+                {% else %}
+                <div style="margin-top:-5px;">
+                  <a href="/auth/form" class="uk-icon-button auth-btn" uk-icon="sign-in"></a>
+                </div>
+                {% endif %}
             </div>
         </div>
         <div class="content">

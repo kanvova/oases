@@ -2,7 +2,7 @@ class TeamModel():
     def getData(self):
         team = [
             {
-                "name" : "Aleksandra Kim",
+                "name" : "Aleksandra Kim!",
                 "img" : "aleksandra_kim.jpg"
             },
             {
