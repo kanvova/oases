@@ -5,6 +5,7 @@
   <head>
     <meta charset="utf-8">
     <title>Oases</title>
+    <link rel="shortcut icon" type="image/png" href="/static/imgs/favicon.png"/>
     <link href="https://fonts.googleapis.com/css?family=Arvo&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/static/css/uikit.min.css">
@@ -39,7 +40,7 @@
                   <a href="/project" class="{% if active_page=='project' %}active{% endif%}">{{_('Project')}}</a>
                 </div>
                 <div>
-                  <a href="/publications" class="{% if active_page=='publications' %}active{% endif%}">{{_('Publications')}}</a>
+                  <a href="/publications" class="{% if active_page=='publications' %}active{% endif%}">{{_('Work in progress')}}</a>
                 </div>
                 <div>
                   <a href="/team" class="{% if active_page=='team' %}active{% endif%}">{{_('Team')}}</a>
@@ -59,9 +60,9 @@
         <div class="content">
           {% block content %}{% endblock %}
         </div>
-        <div class="footer">
-            footer
-        </div>
+    </div>
+    <div class="footer">
+        Oases. 2020
     </div>
 </body>
 </html>
