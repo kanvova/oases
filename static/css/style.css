@@ -204,6 +204,7 @@ h1, h2, h3, h4, h5{
 }
 .publications-item .uk-card{
   border-radius: 2px;
+  padding-bottom: 20px;
   height: 100%;
 }
 .publications-item .uk-card:hover{
@@ -229,6 +230,8 @@ h1, h2, h3, h4, h5{
   color: #7f8c8d;
   font-weight: 100;
   margin-top: 20px;
+  position: absolute;
+  bottom: 20px;
 }
 .publications-item a{
   text-decoration: none;
@@ -251,8 +254,8 @@ h1, h2, h3, h4, h5{
 }
 
 .project-schemе{
-  height: 1000px;
-  width: 600px;
+  height: 900px;
+  width: 900px;
   margin:  0 auto;
   position: relative;
 }
@@ -261,23 +264,28 @@ h1, h2, h3, h4, h5{
   padding: 10px 20px;
   border-radius: 2px;
   background: #fff;
-  width: 280px;
+  width: 190px;
+  height: 200px;
   cursor: pointer;
   transition: 0.3s;
+  border: 2px solid #ddd;
 }
 .project-schemе-wp:hover{
   box-shadow: 0 14px 25px rgba(0,0,0,.16) !important;
 }
 .project-schemе-wp-title{
   font-family: 'Arvo', serif;
-  font-size: 16px;
+  font-size: 22px;
+  margin-top: 15px;
   text-align: center;
 }
 .project-schemе-wp-segment{
   font-weight: 100;
   color: #3498db;
-  font-size: 14px;
+  font-size: 18px;
   text-align: center;
+  line-height: 1.2;
+  margin-top: 5px;
 }
 .project-schemе-wp-info{
   font-weight: 100;
@@ -285,11 +293,33 @@ h1, h2, h3, h4, h5{
 }
 
 .project-schemе-connector{
-  padding: 10px 20px;
-  border-radius: 20px;
+  padding: 5px 10px;
+  border-radius: 25px;
   background: #fff;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 100;
   text-align: center;
   color: #95a5a6;
+}
+@media screen and (max-width: 960px) {
+  .project-schemе{
+    height: 600px;
+    width: 600px;
+  }
+  .project-schemе-wp{
+    width: 120px;
+    height: 125px;
+  }
+  .project-schemе-wp-title{
+    font-size: 14px;
+    margin-top: 0px;
+  }
+  .project-schemе-wp-segment{
+    font-size: 12px;
+    margin-top: 10px;
+  }
+  .project-schemе-connector{
+    font-size: 12px;
+    border-radius: 20px;
+  }
 }
