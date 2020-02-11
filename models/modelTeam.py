@@ -53,9 +53,9 @@ class TeamModel():
                         efficiency.'
                     },
                     {
-                        "name": "Arthur Jacobs",
+                        "name": "Arthur Jakobs",
                         "role": "Doctoral student",
-                        "img": "arthur_jacobs.jpg",
+                        "img": "arthur_jakobs.jpg",
                         "descr": "Arthur's work focuses on a first principles approach to the hybridisation of LCA \
                         data and environmentally extended input output models. With his background in statistical \
                         modelling in astrophysics, he has a strong interest in the uncertainty in the models currently \

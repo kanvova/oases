@@ -94,9 +94,54 @@
 
                 <h3>Motivation</h3>
                 <p>
+                    Understanding global supply chains of our economy and their environmental impacts is an
+                    important step towards a sustainable economy. The two widely used methodologies to study
+                    supply chains are the process-based Life Cycle Assessment (LCA) and Environmentally-Extended
+                    Multi-Regional-Input-Output models (EE-MRIO). Process-based LCA links individual processes
+                    to create a highly detailed supply chain, however, because of limited data availability,
+                    a system boundary needs to be defined where processes outside of this boundary are not
+                    being included in the supply chain. The exclusion of these processes, however, leads to
+                    an underestimation of the environmental impacts of the supply chain under study, a problem
+                    know as the truncation error. EE-MRIO analysis on the other hand, uses macro-economic data
+                    to model the supply chains in a process that provides high completeness, but at the cost of resolution.
+                    <div>
+                        <img src="/static/imgs/project/LCA-IO-Hybrid-Ideal.gif">
+                    </div>
+                </p>
+                <p>
+                    One could describe the difference between process-based LCA and EE-MRIO analysis as the
+                    difference between precision and accuracy. However, to design effective policies that help
+                    to mitigate the environmental impacts of our economy, we need a both detailed and complete
+                    picture of the supply chains.
+                </p>
+                <p>
+                    Hybrid-LCA, an analysis in which both process- and MRIO-data is used, is considered to be
+                    an effective means to mitigate the truncation errors in process-based LCA, and therefore
+                    produces more accurate footprint results. However, in conventional hybrid-LCA, the inclusion
+                    of MRIO data into the supply chain, leads to added uncertainty or noise due to the low product
+                    and sector resolution of this data, which in turn reduces the precision of the results.
+                    An ideal hybrid-LCA methodology therefore, would not only be able to add accuracy,
+                    but also capture the added uncertainty so that we know how precise our model is.
+                </p>
+                <h3>Goal</h3>
+                <p>
+                    Work Package 1 has the goal to develop a such statistically based method for the hybridisation of LCA and MRIO data.
                 </p>
                 <h3>Approach</h3>
                 <p>
+                    We seek to employ the principle of maximum entropy, which provides a means to find the least
+                    biased estimation of a quantity in an indeterminate system, to reconcile information available
+                    at different levels of resolution and on different layers (monetary and physical). The goal is to,
+                    unlike existing footprint indicators derived from hybrid methods, enable us to quantify the
+                    uncertainty of the footprints calculated and give quantitative information on where in the
+                    supply chain resolution needs to be increased and data uncertainty decreased to improve the
+                    accuracy of the footprint.
+                </p>
+                <p>
+                    The result of this work package will be an open source Python package to hybridise the
+                    Ecoinvent LCA database with the EXIOBASE MRIO data, although the methodology will not limited
+                    to any particular data or format but aims to provide a statistical basis for any large scale
+                    hybridisation project on LCA and MRIO data. The output also service as an input for work packages 3,4 and 5.
                 </p>
             </div>
         </div>
@@ -111,11 +156,22 @@
                 <button class="uk-modal-close-outside" type="button" uk-close></button>
                 <h2>Work package 2</h2>
 
-                <h3>Motivation</h3>
+                <h3>Goal</h3>
                 <p>
+                    In order to do a complete sustainability assessment, it is necessary to include
+                    social dimension into life cycle analysis. This is the primary goal of work package 2.
                 </p>
                 <h3>Approach</h3>
                 <p>
+                    The ecoinvent centre will adapt and add quantitative social indicator data from the
+                    Social Hotspots Database to the existing process inventory datasets. Following usual
+                    ecoinvent practice, social indicators will be independently reviewed for consistency
+                    and completeness. In addition, the existing process data of ecoinvent will be tested
+                    for their appropriateness and expanded upon if necessary. Social impacts may require
+                    higher data quality and accuracy than environmental assessments in some parts of the
+                    database, and the database will there be adapted as necessary. After the integration
+                    into the ecoinvent database, the same verified and open methodology will be used to
+                    map social indicators onto the EXIOBASE database.
                 </p>
             </div>
         </div>
@@ -132,9 +188,70 @@
 
                 <h3>Motivation</h3>
                 <p>
+                    Secure supply chains of goods and services consumed within the Swiss economy and society are
+                    essential to guarantee a sustainable development in key sectors such as food and clothing,
+                    information and commu-nication, energy provision and storage, and mobility (Richard and Wachter 2012).
+                    The supply chain of ma-terials used in products within these sectors involves both local and
+                    global actors (Nuss et al. 2016). A high number of parties within the supply chain increases
+                    the potential of different types of supply disrup-tions along the product life cycle.
+                    Criticality assessment, enhanced by the development of several meth-odologies in the past
+                    few years (European Commission 2010; Graedel and Reck 2016; NRC 2008), allows for evaluating
+                    the potential of supply disruptions in current and future supply scenarios by applying supply
+                    risk indicators (Achzet and Helbig 2013; Dewulf et al. 2016; Knoeri et al. 2013; Roelich et al. 2014).
+                    The assessment of one type of supply disruption, the mineral depletion, is established within
+                    Life Cycle As-sessment by the application of various Life Cycle Impact Assessment (LCIA)
+                    indicators (Klinglmair et al. 2013; Wäger et al. 2015). First attempts have also been made
+                    to integrate other risk aspects addressed in criticality assessment into LCA respectively the
+                    more holistic Life Cycle Sustainability Assessment (Bach et al. 2016; Schneider et al. 2013; Sonnemann et al. 2015).
+                </p>
+                <h3>Gaps</h3>
+                <p>
+                    Mostly risks occurring at early supply stages are assessed in existing criticality assessment
+                    approaches, whereas pertinent supply risk indicators are missing that are suitable for an
+                    integrated assessment along the supply chain based on LCA methodology
+                    (Graedel and Reck 2016; Schrijvers et al. 2019). A compre-hensive quantification of the resource
+                    dependency of the Swiss economy requires the application of said indicators to a data-rich
+                    description of Swiss materials flows. For an improvement of the sustainability of Swiss supply
+                    chains, supply risks within current and future supply scenarios have to be addressed by
+                    eliminating existing data gaps as good as possible.
+                </p>
+                <h3>Goal</h3>
+                <p>
+                    The main goals of WP 3 consist in (i) identifying and prioritizing pertinent supply risk
+                    indicators suitable for an integrated sustainability assessment based on Life Cycle Assessment
+                    (LCA) methodology, (ii) providing the data to quantify priority supply risk indicators along
+                    existing supply chains relevant for the Swiss economy and support their implementation in a
+                    merged ecoinvent, EXIOBASE and Social Hotspot database, and (iii) evaluating the suitability
+                    of the supply risk indicators and the merged database to address future supply scenarios.
                 </p>
                 <h3>Approach</h3>
                 <p>
+                    <u>Step 1: Review</u><br>
+                    Review of existing criticality assessment approaches and related indicators for supply risk
+                    assessment and identification of indicator-specific data requirements along the supply chain.
+                    </p>
+                <p>
+                    <u>Step 2: Evaluation</u><br>
+                    Evaluation of the development status of commonly used supply risk indicators regarding an
+                    assessment along the supply chain and investigation of the applicability of supply risk
+                    indicators in the context of da-tabases developed in the framework of LCA methodology.
+                    </p>
+                <p>
+                    <u>Step 3: Analyse</u><br>
+                    Prioritization and adaption of indicators, suitable to assess supply risks along the supply chain,
+                    for an inte-gration within LCSA considering limitations in data availability and acquisition
+                    as well as methodological boundary conditions of the LCSA framework.
+                    </p>
+                <p>
+                    <u>Step 4: Modelling</u><br>
+                    Based on the priority indicators, development of a methodology for supply risk assessment
+                    integrated into an LCSA frame that quantifies major existing supply risks along the supply
+                    chains for components and products of key sectors within the Swiss economy and society.
+                    </p>
+                <p>
+                    <u>Step 5: Evaluation</u><br>
+                    Evaluation of the priority supply risk indicators applied within the developed methodology
+                    and the merged database regarding their suitability to address future supply scenarios.
                 </p>
             </div>
         </div>
@@ -151,9 +268,36 @@
 
                 <h3>Motivation</h3>
                 <p>
+                    For a high-quality evaluation of Swiss production and consumption and the associated
+                    supply chains, it is important to base the analysis on high-quality inventories.
+                    However, current data is partially lacking details in some datasets relevant for
+                    the creation of a merged database, and in some cases the required geographic resolution
+                    for e.g. social assessments. Furthermore, certain economic sectors might not be
+                    sufficiently represented. Therefore, the need for better quality data is apparent.
+                </p>
+                <h3>Goal</h3>
+                <p>
+                    Extending and updating the current data represents the goal of this work package.
+                    New data will be available to the large ecoinvent user base and therefore increase
+                    the quality of LCA research and applications worldwide.
                 </p>
                 <h3>Approach</h3>
                 <p>
+                    In a first step, major data gaps and quality issues in the preliminary merged LCA/MRIO data
+                    will be identified based on input data from WP1 and analysis and methodological advancements
+                    made in WP3 and WP5. These gaps and quality issues will be prioritized according to their
+                    relevance for the sustainability assessment of Swiss production and consumption.
+                    Identification and prioritization will include environmental issues (i.e. the standard
+                    entries of the ecoinvent database), social issues (based on the integration of the SHDB
+                    performed in WP2) and resource supply risk issues (based on the outcomes of WP3).
+                    </p>
+                <p>
+                    In a second step, data gaps will be filled by updating existing and creating new ecoinvent
+                    inventory datasets and creating new inventory data, which will be supplied to and integrated
+                    into the ecoinvent and the merged LCA/MRIO databases.
+                    </p>
+                <p>
+                    Data collection and processing will be shared among PSI, Empa, and ecoinvent.
                 </p>
             </div>
         </div>
@@ -168,11 +312,20 @@
                 <button class="uk-modal-close-outside" type="button" uk-close></button>
                 <h2>Work package 5</h2>
 
-                <h3>Motivation</h3>
+                <h3>Goal</h3>
                 <p>
+                    The goal of this work package is to systematically contribute to the quality of the integrated
+                    assessment of Swiss consumption and production.
                 </p>
                 <h3>Approach</h3>
                 <p>
+                    One of the main approaches to address this goal is to improve data quality in inventories
+                    by means of identifying processes that contribute the most to uncertainties in LCA results
+                    and collecting more data for them. This work will employ Global Sensitivity Analysis,
+                    where the main challenges lie in a very high-dimensional nature of the problem, as well as
+                    the issue of input correlations, and validation and interpretation of results.<br>
+                    Within this work package we will also update the existing modelling of Swiss consumption with newer data.
+
                 </p>
             </div>
         </div>
